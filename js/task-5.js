@@ -1,8 +1,10 @@
 const colorChange = document.querySelector(".widget");
+const colorSpan = document.querySelector(".color");
 
 colorChange.addEventListener("click", () => {
     const randomColor = getRandomHexColor();
     document.body.style.backgroundColor = randomColor;
+    colorSpan.textContent = randomColor;
 });
     
 function getRandomHexColor() {
